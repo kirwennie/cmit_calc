@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CMIT CALC</title>
+    <script type="text/javascript" src="js.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <input size="11" type="text" name="name" value="0" id="result">
+    <br>
+    <button class="button" onclick="addDigit('7')">7</button>
+    <button class="button" onclick="addDigit('8')">8</button>
+    <button class="button" onclick="addDigit('9')">9</button>
+    <button class="button" onclick="operation(0)">/</button>
+    <br>
+    <button class="button" onclick="addDigit('4')">4</button>
+    <button class="button" onclick="addDigit('5')">5</button>
+    <button class="button" onclick="addDigit('6')">6</button>
+    <button class="button" onclick="operation(1)">*</button>
+    <br>
+    <button class="button" onclick="addDigit('1')">1</button>
+    <button class="button" onclick="addDigit('2')">2</button>
+    <button class="button" onclick="addDigit('3')">3</button>
+    <button class="button" onclick="operation(2)">-</button>
+    <br>
+    <button class="button" id="zero" onclick="addDigit('0')">0</button>
+    <button class="button" id="resetAll" onclick="resetAll()">C</button>
+    <button class="button" onclick="operation(3)">+</button>
+    <br>
+    <button class="button" id="dividebytwo" onclick="operation(4); calculate()">/2</button>
+    <button class="button" id="calculate" onclick="calculate()">=</button>
+</body>
+</html>
